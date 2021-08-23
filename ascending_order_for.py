@@ -1,12 +1,12 @@
-def ascending_order(a):
-    for i in range(len(a)):
+def ascending_order(nums):
+    for i in range(len(nums)):
         x = i
-        for j in range(i+1, len(a)):
-            if a[x] > a[j]:
+        for j in range(i+1, len(nums)):
+            if nums[x] > nums[j]:
                x=j
            
-        a[i],a[x] = a[x],a[i]
-    print(a)
+        nums[i],nums[x] = nums[x],nums[i]
+    print(nums)
 y = [23,53,2,4,8,98,1,298,6]
 z = [33,2,5,7,87,9,432,1]
 ascending_order(y)
